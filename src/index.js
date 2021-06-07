@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import SeasonDisplay from './SeasonDisplay';
+import Loading from './Loading';
 
 /* Allows us to pull a ton of built in functionality
    AKA subclassing React.Component */
@@ -33,7 +34,7 @@ class App extends React.Component {
             return <SeasonDisplay lat={this.state.lat} />
         }
 
-        return <div> Loading...  </div>;
+        return <Loading message="Please accept location request..."/>;
 
     }
 }
