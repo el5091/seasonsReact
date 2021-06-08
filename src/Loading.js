@@ -10,6 +10,7 @@ const Loading = props => {
 };
 
 
+// This defaults the message when no message is given
 Loading.defaultProps = {
     message: 'Loading...'
 };
